@@ -1,0 +1,15 @@
+<arquillian xmlns="http://jboss.org/schema/arquillian">
+    <engine>
+        <property name="deploymentExportPath">target/deployments</property>
+    </engine>
+    <container qualifier="wildfly" default="true">
+        <configuration>
+            <!-- REPLACE THIS WITH YOUR ACTUAL PATH -->
+            <property name="jbossHome">/opt/homebrew/opt/wildfly-as/libexec</property>
+            <property name="managementPort">9990</property>
+<!--            <property name="jbossHome">${jboss.home}</property>-->
+        </configuration>
+
+    </container>
+
+</arquillian>
